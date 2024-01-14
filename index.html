@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="chat-wrapper" id="chat-ui">
+                <div class="chat-header">
+                    <div class="header-collapse">
+                        <img src="./assets/.svg" alt="Back button">
+                    </div>
+                    <div class="chat-header-sub">
+                        <div class="chat-header-img">
+                            <img class="profile-picture" src="./assets/IMG_3897.jpg" alt="Display picture">
+                            <div class="online-wrapper">
+                                <img class="online" src="./assets/Ellipse 8.svg" alt="Online indicator">
+                            </div> 
+                        </div>
+                        <div class="user">
+                            <h4>Adaobi</h4>
+                            <h6>Active 1h ago</h6>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="chat-panel">
+                <div class="chat-inbox">
+                    <div class="chats">
+                        <div class="chat-box">
+                            <div class="received-chats">
+                            <div class="received-chats-img">
+                                <img src="./assets/2.svg" alt="Bot display picture">
+                            </div>
+                                <div class="received-msg">
+                                    <div class="received-msg-inbox">
+                                        <p>👋 Hi there! How can I help?</p>
+                                    </div>
+                                    <span class="status"></span>
+                                </div>
+                            </div>
+
+                            <div class="outgoing-chats">
+                                <div class="outgoing-msg">
+                                    <div class="outgoing-msg-inbox">
+                                        <p>I'm sorry bot, but you are wrong</p>
+                                    </div>
+                                    <span class="status"></span>
+                                </div>
+                                <div class="outgoing-chats-img">
+                                    <img src="./assets/IMG_3897.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="outgoing-chats">
+                                <div class="outgoing-msg">
+                                    <div class="outgoing-msg-inbox">
+                                        <p>Can I talk to someone please?</p>
+                                    </div>
+                                    <span class="status"></span>
+                                </div>
+                                <div class="outgoing-chats-img">
+                                    <img src="./assets/IMG_3897.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="received-chats">
+                                <div class="received-chats-img">
+                                    <img src="./assets/2.svg" alt="Bot display picture">
+                                </div>
+                                <div class="received-msg">
+                                    <div class="received-msg-inbox">
+                                        <p id="bot-chat"></p>
+                                    </div>
+                                    <span class="status"></span>
+                                </div>
+                            </div>
+
+                            <div class="outgoing-chats">
+                                <div class="outgoing-msg">
+                                    <div class="outgoing-msg-inbox">
+                                        <p id="user-chat"></p>
+                                    </div>
+                                    <span class="status"></span>
+                                </div>
+                                <div class="outgoing-chats-img">
+                                    <img src="./assets/IMG_3897.jpg" alt="User display picture">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div><hr>
+                <div class="chat-footer">
+                    <div class="input-group">
+                        <input type="text" class="input-input" placeholder="Type a reply..." id="input-field">
+                            <div class="input-group-sub">
+                                <span class="input-group-icons">
+                                    <img src="./assets/GIF.svg" alt="GIF">
+                                    <img src="./assets/Emoji.svg" alt="Emoji">
+                                    <img src="./assets/Clip.svg" alt="Attachment">
+                                </span>
+                            </div>
+                            <button id="send-button" class="submit-button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEX
+                                ///8ZdtL19fUAadC+z+n7+vYAas8RdNEAbtAAcdGiwOnu9PunxOole9T0+P33+v05g9bd6PctftTJ2vJFiNjm7v
+                                nA1PCBrOJvoN7R4PSUteWyyuxXktubvOhMi9i5z+5mmd0AYs2vhPggAAAC+0lEQVR4nO2ci3KjMAxFQ9mAeUMIC
+                                aRN2/3/n9w0GRq2PGzLr9sZ3y+4c5CRZCR2Oy8vLy8vLy+vX67udO77y5C59jFReSlCljAW1Xnl2suopmBxcFfM
+                                ghyDVndIgm/FUZ26NvSleuLpTitOndN6ZcEPxdHRMa3yLflp6h5bTml1cTw35ZpWGy15uttyF1uncMWUS1qrpB6
+                                2kqsLWg1bjKkJrat9U+X7wun731Zgn9Z19p6a2WL2Y+uw+fxGWpZPYr4V6q5oVUvvdOe0TtyoGmnVaWnNFe8ATm
+                                gV1mi1CT/Wn7RyS7R6UVQPWnZsNYJRNdIqrBTNvZSrG62DBVpNIRxVIy0LLcZFDpUdWpX4AZzQMh1bqUiysU0re
+                                5dHZZ7W63pdzKFVp+aa/ZqE6kHLWPL5kD6AE1rGCptPiWQzp2WoIRv+0k2ZoyWZbOa0EgO0hoAa609a+huysxqq
+                                wEj7moWKqIzQks/Li7b0thidQBMoZEvrSSTl5UVbGt/ylWy1t26L6cuJ8ytQui1ttCrhJlDEli5aLbGEWbEV6am
+                                3xK4WxG1paV9bvaZutkINtGT6ZUFbTLmW51yD0mwpN/vqeXnJlmKL0aiWMCu21BoyLXl5yZYKrUxbspnZiuqB6i
+                                rVfgCftpIPoqkqCLelcEDjpCG6Gv5s63qks0zeqPnwZb+t7EyvvKKWaKp84WhP711ZTzRV8Vzt6Tkyrommdh0PVU
+                                e/EQmoQYVoCvLxYQY64CuB+/JU6C+oL0/INJMbql1uSqgJGbJ0QSzyIMvhs4kST7FxgGyxEJtRyLYd8YID8SoI8t
+                                IM8XoR8iIW8coa8nIf8TMI5AcjxE9rkB8hET/XQn7YRhwBgByWQBwrQRzAyY6Ao0qIQ12Q42+Ig4KQI5WIw6eQY7
+                                qIA82Qo98yQ/K2lhJFM7HNdQLIxQvIFRXEZR7EtSfIBTHIVTrO0mHsZOnwd61nulxkhVz5hVyOhlwjx1y4x/w1Ae
+                                RPHDB/d7GD/DGIl5eXl5eXlxeo/gHF4UM92dvSgQAAAABJRU5ErkJggg==" alt="Send button">
+                            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="popout-btn-wrap">
+                <button id="pop-out-btn">
+                    <img src="./assets/Trigger.svg" alt="Pop up button"> 
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
